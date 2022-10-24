@@ -1,0 +1,44 @@
+en:
+  spree:
+    allow_gift_card_redeem: Να επιτρέπεται η εξαργύρωση της δωροκάρτας
+    apply: Εφαρμογή
+    back_to_gift_cards_list: Επιστροφή στη Λίστα Δωροκαρτών
+    buy_gift_card: Αγορά δωροκάρτας
+    current_value: Τρέχουσα Τιμή
+    errors:
+      gift_card:
+        greater_than_current_value: δεν μπορεί να είναι περισσότερο από το current_value
+        unauthorized: Δεν είστε εξουσιοδοτημένοι να εκτελέσετε αυτήν την ενέργεια.
+        already_redeemed: Η δωροκάρτα έχει ήδη εξαργυρωθεί.
+    gift_card: Δωροκάρτα
+    gift_card_added: Η Δωροκάρτα προστέθηκε
+    gift_card_added_partial: Η Δωροκάρτα προστέθηκε. Προσθέστε έναν άλλο τρόπο πληρωμής για το υπόλοιπο ποσό.
+    gift_card_calculator: Υπολογιστής Δωροκάρτας
+    gift_card_discount: Έκπτωση Δωροκάρτας
+    gift_card_email:
+      subject: Συγχαρητήρια! Η Δωροκάρτα ελήφθη!
+    gift_card_payment_method:
+      insufficient_authorized_amount: Δεν είναι δυνατή η αποδοχή ποσού μεγαλύτερου από το επιτρεπόμενο.
+      insufficient_funds: Το υπόλοιπο ποσό της δωροκάρτας δεν επαρκεί
+      successful_action: Επιτυχής Δωροκάρτα %{action}
+      unable_to_capture: "Δεν είναι δυνατή η λήψη Δωροκάρτας: %{auth_code}"
+      unable_to_find: Δεν ήταν δυνατή η εύρεση της δωροκάρτας
+      unable_to_find_for_action: "Δεν ήταν δυνατή η εύρεση της Δωροκάρτας για τον κωδικό auth: %{auth_code} για την ενέργεια: %{action}"
+      unable_to_void: "Δεν είναι δυνατή η ακύρωση του κωδικού: %{auth_code}"
+      unable_to_credit: "Δεν είναι δυνατή η πίστωση κωδικού: %{auth_code}"
+    gift_card_redeemed: Η Δωροκάρτα εξαργυρώθηκε με επιτυχία.
+    gift_card_settings: Ρυθμίσεις Δωροκάρτας
+    gift_card_user: Χρήστης Δωροκάρτας
+    gift_cards: Δωροκάρτες
+    gift_code: Δωροκάρτα
+    gift_code_applied: Ο κωδικός Δωροκάρτας εφαρμόστηκε με επιτυχία στην παραγγελία σας.
+    gift_code_already_applied: Ο κωδικός της Δωροκάρτας έχει ήδη χρησιμοποιηθεί.
+    gift_code_not_found: Ο κωδικός Δωροκάρτας που εισαγάγατε δεν βρέθηκε. Παρακαλώ προσπαθησε με άλλο κωδικό.
+    is_gift_card: Είναι Δωροκάρτα
+    new_gift_card: Νέα Δωροκάρτα
+    note: Σημείωση
+    original_value: Αρχική Αξία
+    recipient_name: Ονομα Παραλήπτη
+    successfully_created_gift_card: Δημιουργήσατε με επιτυχία τη Δωροκάρτα.
+    transactions: Συναλλαγές
+    value: Αξία

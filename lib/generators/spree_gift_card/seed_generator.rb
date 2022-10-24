@@ -3,7 +3,7 @@ module SpreeGiftCard
     class SeedGenerator < Rails::Generators::Base
       source_root File.expand_path("../../templates", __FILE__)
 
-      desc "Create initial gift card"
+      desc "Create default gift card"
 
       def run_db_seeds
         seed_file = File.join(File.expand_path("../../../../db", __FILE__), "seeds.rb")

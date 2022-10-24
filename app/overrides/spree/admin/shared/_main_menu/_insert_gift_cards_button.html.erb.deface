@@ -1,0 +1,10 @@
+<!-- insert_after "#sidebarPromotion"  -->
+
+<ul class="nav nav-sidebar border-bottom" id="sidebarGiftCard">
+    <li class="sidebar-menu-item d-block w-100 position-relative">
+      <a class="w-100 p-3 d-flex align-items-center icon-link with-tip action-promotion.svg" href="<%= spree.admin_gift_cards_path %>" data-original-title="" title="">
+          <%= svg_icon(name: 'promotion.svg', classes: "mr-2 icon icon-promotion.svg", width: 16, height: 16) %>
+          <span class="text"><%= Spree.t("gift_cards") %></span>
+        </a>
+    </li>
+</ul>

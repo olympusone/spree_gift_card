@@ -2,13 +2,11 @@ el:
   activerecord:
     attributes:
       spree/gift_card:
-        email: Email
-        name: Όνομα
+        email: Email Παραλήπτη
+        name: Όνομα Παραλήπτη
         sender_name: Όνομα Αποστολέα
         sender_email: Email Αποστολέα
-        delivery_on: Παραλαβή Στις
         current_value: Τρέχουσα Τιμή
-        original_value: Αρχική Τιμή
         code: Κωδικός
         note: Σημείωση
   spree:
@@ -17,7 +15,6 @@ el:
     back_to_gift_cards_list: Επιστροφή στη Λίστα Δωροκαρτών
     buy_gift_card: Αγορά δωροκάρτας
     current_value: Τρέχουσα Τιμή
-    delivery_on: Παράδοση Στις
     errors:
       gift_card:
         greater_than_current_value: δεν μπορεί να είναι περισσότερο από το current_value
@@ -50,7 +47,6 @@ el:
     is_gift_card: Είναι Δωροκάρτα
     new_gift_card: Νέα Δωροκάρτα
     note: Σημείωση
-    original_value: Αρχική Αξία
     recipient_name: Ονομα Παραλήπτη
     sender_email: Email Αποστολέα
     sender_name: Όνομα Αποστολέα

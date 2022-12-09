@@ -1,0 +1,9 @@
+<!-- insert_after "[data-hook='admin_product_form_promotionable']" -->
+
+<div data-hook="admin_product_form_is_gift_card">
+  <%= f.field_container :is_gift_card, class: ['form-group'] do %>
+      <%= f.check_box :is_gift_card %>
+      <%= f.label :is_gift_card, Spree.t(:is_gift_card) %>
+      <%= f.error_message_on :is_gift_card %>
+  <% end %>
+</div>

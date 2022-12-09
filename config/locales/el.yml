@@ -5,7 +5,6 @@ el:
         email: Email Παραλήπτη
         name: Όνομα Παραλήπτη
         sender_name: Όνομα Αποστολέα
-        sender_email: Email Αποστολέα
         current_value: Τρέχουσα Τιμή
         code: Κωδικός
         note: Σημείωση
@@ -48,7 +47,6 @@ el:
     new_gift_card: Νέα Δωροκάρτα
     note: Σημείωση
     recipient_name: Ονομα Παραλήπτη
-    sender_email: Email Αποστολέα
     sender_name: Όνομα Αποστολέα
     successfully_created_gift_card: Δημιουργήσατε με επιτυχία τη Δωροκάρτα.
     transactions: Συναλλαγές

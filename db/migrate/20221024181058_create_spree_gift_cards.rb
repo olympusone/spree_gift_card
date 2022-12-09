@@ -5,7 +5,6 @@ class CreateSpreeGiftCards < ActiveRecord::Migration[6.1]
       t.integer :line_item_id
       t.string :email
       t.string :name
-      t.string :sender_email
       t.string :sender_name
       t.text :note
       t.string :code, null: false

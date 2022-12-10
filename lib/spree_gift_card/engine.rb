@@ -9,10 +9,14 @@ module SpreeGiftCard
       g.test_framework :rspec
     end
 
+    config.after_initialize do
+      Spree::PermittedAttributes.line_item_attributes << { gift_card_attributes: [:variant_id, :sender_name, :email, :name, :note] }
+    end
+
     initializer "spree.register.payment_methods", after: :after_initialize do |_app|
       _app.config.spree.payment_methods << Spree::PaymentMethod::GiftCard
     end
-
+        
     initializer "spree.gift_card.permit_params" do |_app|
       Spree::PermittedAttributes.source_attributes << :code
     end

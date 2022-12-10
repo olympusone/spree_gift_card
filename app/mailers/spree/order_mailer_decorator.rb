@@ -1,15 +1,23 @@
-Spree::OrderMailer.class_eval do
-  def gift_card_email(card_id, order_id)
-    @gift_card = Spree::GiftCard.find_by(id: card_id)
-    @order = Spree::Order.find_by(id: order_id)
+module Spree::OrderMailerDecorator
+  def gift_card_email(card)
+    @gift_card = card
+    @order = card.list_item.order
+    
+    to = @order.user.email    
+    reply_to_address = @current_store.customer_support_email
     subject = "#{Spree::Store.current.name} #{Spree.t('gift_card_email.subject')}"
-    @gift_card.update_attribute(:sent_at, Time.now)
 
     mail(
-      to: @gift_card.email,
-      from: "#{@gift_card.sender_name} <#{from_address}>",
-      reply_to: "#{@gift_card.sender_name} <#{@gift_card.sender_email}>",
+      to: to,
+      from: from_address, reply_to: reply_to_address,
       subject: subject
     )
-  end
+  end  
+    
+  protected
+  def current_store(opts = {})
+      @current_store = Spree::Store.find_by(id: opts[:current_store_id]) || Spree::Store.default
+  end  
 end
+
+Spree::OrderMailer.prepend Spree::OrderMailerDecorator

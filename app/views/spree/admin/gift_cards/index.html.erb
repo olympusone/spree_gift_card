@@ -15,26 +15,22 @@
         <th scope="col"><%= Spree.t(:current_value) %></th>
         <th scope="col"><%= Spree.t(:email) %></th>
         <th scope="col"><%= Spree.t(:name) %></th>
-        <th scope="col"><%= Spree.t(:sender_email) %></th>
         <th scope="col"><%= Spree.t(:sender_name) %></th>
-        <th scope="col"><%= Spree.t(:note) %></th>
         <th scope="col" data-hook="admin_gift_cards_index_header_actions" class="actions"></th>
       </tr>
     </thead>
     <tbody>
-      <% @collection.each do |gift_card| %>
-        <tr id="<%= spree_dom_id gift_card %>">
+      <% @collection.each do |card| %>
+        <tr id="<%= spree_dom_id card %>">
           <td><%= card.code %></td>
           <td><%= number_to_currency card.current_value %></td>
           <td><%= card.email %></td>
           <td><%= card.name %></td>
-          <td><%= card.sender_email %></td>
           <td><%= card.sender_name %></td>
-          <td><%= card.note %></td>
           <td class="actions" data-hook="admin_gift_cards_index_row_actions">
             <span class="d-flex justify-content-end">
-              <%= link_to_edit gift_card, no_text: true, class: 'edit' if can?(:edit, gift_card) %>
-              <%= link_to_delete gift_card, no_text: true if can?(:delete, gift_card) %>
+              <%= link_to_edit card, no_text: true, class: 'edit' if can?(:edit, card) %>
+              <%= link_to_delete card, no_text: true if can?(:delete, card) %>
             </span>
           </td>
         </tr>
